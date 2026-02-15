@@ -4,14 +4,16 @@
 */
 
 :root {
-  --background-Blue: #000028;
-  --grey: #353430;
-  --text-pink: #F1B2CE;
-  --violet: #DB00FF;
-  --background-pink: #FFF1F7;
-  --red: #FF0070;
-  --true-pink: #FF8DCB;
-  --light-pink: #FFC2E6;
-  --red-opacity: #FF007066;
-  --grey-opacity: #32312D66;
+ --accent-color: #FF0070;
+  --heading-color: #DB00FF;
+  --button-color: #FF0070;
+  --title-decor-color: #000028;
+  --background-title-decor: #FF0070;
+  --background-color: #000028;
+  --decoration-color: #FF0070;
+  --icon-color: #FF0070;
+  --background-image: url(../images/cover-image-dark.png);
+  --button-color-opacity: #FF007066;
+  --background-main: #000028;
+  --text-main: #F1B2CE;
 }
