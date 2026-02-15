@@ -21,6 +21,7 @@
   --text-main: var(--grey);
   --icon__text: hidden;
 }
+
 @media (prefers-color-scheme: light){ 
   :root.theme-light {
   --accent-color: var(--true-pink);
