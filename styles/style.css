@@ -2,4 +2,323 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  background-image: var(--background-image);
+  background-attachment: fixed;
+  background-color: var(--background-color);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  font-family: "IBM Plex mono", sans-serif;
+  font-size: 18px;
+}
+.header {
+  height: 100vh;
+  min-height: 668px;
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  grid-template-columns: 1fr;
+  padding: 10px;
+  align-items: center;
+  position: relative;
+}
+.decorated-zone {
+  position: relative;
+}
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--decoration-color);
+  border-right: 1px solid var(--decoration-color);
+  top: 10px;
+  right: 10px;
+}
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-left: 1px solid var(--decoration-color);
+  border-bottom: 1px solid var(--decoration-color);
+  left: 10px;
+  bottom: 10px;
+}
+.icon__text {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 10px;
+  right: 19px;
+  color: var(--icon-color);
+  font-size: inherit;
+  text-transform: uppercase;
+  line-height: 25px;
+  visibility: var(--icon__text);
+}
+.icon__text::before {
+  content: "rec";
+  position: relative;
+  text-transform: uppercase;
+}
+.icon__text::after {
+  content: "";
+  display: inline-block;
+  inline-size: 9px;
+  block-size: 9px;
+  border-radius: 50%;
+  margin-inline-start: 10px;
+  background-color: var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--accent-color);
+}
+.header__theme-menu {
+  display: grid;
+  justify-self: end;
+}
+.header__theme-menu-list {
+  display: grid;
+  gap: 10px;
+}
+.header__theme-menu-button {
+  background-color: inherit;
+  border: none;
+  color: var(--button-color);
+  text-transform: lowercase;
+  cursor: pointer;
+  width: 70px;
+  height: 26px;
+  line-height: 18px;
+}
+.header__theme-menu-button:hover:not(.header__theme-menu-button_active) {
+  border: 1px solid var(--button-color-opacity);
+}
+.header__theme-menu-button:focus {
+  outline: none;
+}
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--button-color);
+}
+.header__theme-menu-button_active {
+  border: 1px solid var(--button-color);
+  pointer-events: none;
+}
+.heading {
+  font-weight: bold;
+  text-shadow: 4px 4px 0 var(--accent-color);
+  color: var(--heading-color);
+  line-height: 82.5%;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+}
+.title-decor {
+  color: var(--title-decor-color);
+  background-color: var(--background-title-decor);
+  font-weight: bold;
+  line-height: 23.4px;
+  font-size: inherit;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  background-color: var(--background-main);
+  padding: 40px 10px;
+}
+.main__section {
+  display: grid;
+  gap: 20px;
+}
+.section__text {
+  display: grid;
+  gap: 20px;
+}
+.section__title {
+  line-height: 23.4px;
+  color: var(--button-color);
+  font-size: inherit;
+  line-height: 23.4px;
+}
+.section__title__concentration {
+  line-height: 23.4px;
+  color: var(--button-color);
+  font-size: inherit;
+  line-height: 23.4px;
+}
+.section__content {
+  display: grid;
+  gap: 20px;
+}
+.section__content__concentration {
+  display: grid;
+  gap: 20px;
+  line-height: 23.4px;
+}
+.section__content__advise {
+  display: grid;
+  gap: 10px;
+}
+.content {
+  display: grid;
+  gap: 10px;
+}
+.content__advise {
+  display: grid;
+  gap: 20px;
+}
+.title__text {
+  color: var(--title-decor-color);
+  background-color: var(--background-title-decor);
+  font-size: inherit;
+  line-height: 23.4px;
+}
+.title__text__icon {
+  color: var(--title-decor-color);
+  background-color: var(--background-title-decor);
+  font-size: inherit;
+  line-height: 23.4px;
+}
+.text {
+  color: var(--text-main);
+  font-size: inherit;
+  line-height: 23.4px;
+}
+.text_link {
+  text-shadow: 2px 1px 0 var(--accent-color);
+  text-decoration: none;
+}
+.text_link:hover {
+  border-bottom: 1px solid currentColor;
+}
+.text_link:focus {
+  outline: none;
+}
+.text_link:focus-visible {
+  outline: 1px solid currentColor;
+}
+.title {
+  color: var(--title-decor-color);
+  background-color: var(--background-title-decor);
+  font-size: inherit;
+  line-height: 23.4px;
+  font-weight: normal;
+}
+.main__section__icon {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.content__illustration {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.img__illustration {
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+footer {
+  display: grid;
+  justify-content: center;
+  height: 100vh;
+  min-height: 668px;
+  background-color: var(--background-main);
+}
+.bottom__heading {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+@media (width >= 768px) {
+  .header {
+    min-height: 1024px;
+    height: 100vh;
+    padding: 20px;
+  }
+  .heading {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+  .top__heading {
+    margin-left: -20px;
+  }
+  .decorated-zone::before {
+    top: 20px;
+    right: 20px;
+  }
+  .decorated-zone::after {
+    left: 20px;
+    bottom: 20px;
+  }
+  .icon__text {
+    top: 20px;
+    right: 29px;
+  }
+  .title-decor {
+    justify-self: end;
+    width: 50%;
+  }
+  .main {
+    padding: 60px 20px;
+    gap: 80px;
+  }
+  .main__section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .section__title__concentration {
+    width: 30%;
+  }
+  .main__section__icon {
+    gap: 20px;
+  }
+  .content__illustration {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .sunset {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .ice__cream {
+    grid-column: 3/4;
+    grid-row: 1/3;
+  }
+  .tape {
+    grid-column: 1/2;
+    grid-row: 2/5;
+  }
+  .books {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .street {
+    grid-column: 2/4;
+    grid-row: 3/5;
+  }
+}
+@media (width >= 1024px) {
+  .header {
+    min-height: 768px;
+    height: 100vh;
+    padding: 20px;
+  }
+  .title-decor {
+    width: 50%;
+  }
+  .header__theme-menu {
+    justify-self: center;
+    align-self: start;
+  }
+  .header__theme-menu-list {
+    display: flex;
+  }
+  .section__content__concentration {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+  }
 }

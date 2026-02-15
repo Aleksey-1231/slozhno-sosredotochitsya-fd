@@ -2,3 +2,16 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root{
+  --background-Blue: #000028;
+  --grey: #353430;
+  --text-pink: #F1B2CE;
+  --violet: #DB00FF;
+  --background-pink: #FFF1F7;
+  --red: #FF0070;
+  --true-pink: #FF8DCB;
+  --light-pink: #FFC2E6;
+  --red-opacity: #FF007066;
+  --grey-opacity: #32312D66;
+}

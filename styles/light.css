@@ -9,4 +9,30 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --accent-color: var(--true-pink);
+  --heading-color: var(--light-pink);
+  --button-color: var(--grey);
+  --title-decor-color: var(--grey);
+  --background-title-decor: var(--true-pink);
+  --background-color: var(--background-pink);
+  --decoration-color: var(--grey);
+  --button-color-opacity: var(--grey-opacity);
+  --background-main: var(--background-pink);
+  --text-main: var(--grey);
+  --icon__text: hidden;
+}
+@media (prefers-color-scheme: light){ 
+  :root.theme-light {
+  --accent-color: var(--true-pink);
+  --heading-color: var(--light-pink);
+  --button-color: var(--grey);
+  --title-decor-color: var(--grey);
+  --background-title-decor: var(--true-pink);
+  --background-color: var(--background-pink);
+  --decoration-color: var(--grey);
+  --button-color-opacity: var(--grey-opacity);
+  --background-main: var(--background-pink);
+  --text-main: var(--grey);
+  --icon__text: hidden;
+}
 }
