@@ -4,7 +4,7 @@
 */
 
 :root {
- --accent-color: #FF0070;
+  --accent-color: #FF0070;
   --heading-color: #DB00FF;
   --button-color: #FF0070;
   --title-decor-color: #000028;
@@ -16,4 +16,5 @@
   --button-color-opacity: #FF007066;
   --background-main: #000028;
   --text-main: #F1B2CE;
+  --icon__text: visible;
 }
